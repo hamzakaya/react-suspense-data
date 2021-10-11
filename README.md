@@ -2,6 +2,15 @@
 ### Support
 ✅ Typescript support
 
+### Getting Start
+```
+yarn add react-suspense-data
+
+# OR
+
+npm install --save react-suspense-data
+```
+
 ### Example
 ```
 import { Suspendable, useSuspendableData } from 'react-suspense-data'
