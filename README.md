@@ -10,11 +10,11 @@ const UserPage = ({ userId }) => {
   const suspendableData = useSuspendableData(() => getUserAsync({ id: userId }), [userId])
 
   return (
-    <Suspense fallback={<Loading />}>
+    <React.Suspense fallback={<Loading />}>
        <Suspendable data={suspendableData}>
          {data => <UserProfile user={data}/>}
        </Suspendable>
-    </Suspense>
+    </React.Suspense>
   )
 }
 ```
